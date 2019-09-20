@@ -1,0 +1,7 @@
+{
+  "url": "https://www.google.com",
+  "browser": "chrome",
+  "chromedriver_path": "C:\\DRIVERS\\chromedriver.exe",
+  "geckodriver_path": "C:\\DRIVERS\\geckodriver.exe",
+  "driver_timeout": "5"
+}
