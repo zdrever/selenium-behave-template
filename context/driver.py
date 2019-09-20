@@ -16,11 +16,9 @@ class Driver(object):
 
     def __init__(self):
         if settings.browser == "chrome":
-            self.driver = webdriver.Chrome(
-                executable_path=settings.chromedriver_path)
+            self.driver = webdriver.Chrome()
         elif settings.browser == "firefox":
-            self.driver = webdriver.Firefox(
-                executable_path=settings.geckodriver_path)
+            self.driver = webdriver.Firefox()
         else:
             raise SeleniumDriverNotFound(
                 "{settings.browser} not currently supported")

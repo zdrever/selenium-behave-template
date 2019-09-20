@@ -10,8 +10,6 @@ class Settings(object):
             settings = json.load(f)
             self.url = settings['url']
             self.browser = settings['browser']
-            self.chromedriver_path = settings['chromedriver_path']
-            self.geckodriver_path = settings['geckodriver_path']
             self.driver_timeout = int(settings['driver_timeout'])
 
 
