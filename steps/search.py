@@ -1,6 +1,8 @@
 from behave import given, when, then
 from pages.search import search_page
 
+"""Hooks for interacting with google search"""
+
 
 @when(u'I search for "{search_term}"')
 def search(context, search_term):

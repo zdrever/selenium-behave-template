@@ -1,4 +1,4 @@
-Feature: search
+Feature: Search
 
     Scenario: Search
         Given I load the website

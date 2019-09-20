@@ -3,6 +3,7 @@ from context.config import settings
 
 
 class Driver(object):
+    """Singleton class for interacting with the selenium webdriver object"""
     instance = None
 
     class SeleniumDriverNotFound(Exception):
@@ -25,6 +26,13 @@ class Driver(object):
 
     def get_driver(self):
         return self.driver
+
+    def stop_instance(self):
+        self.driver.quit()
+        instance = None
+
+    def clear_cookies(self):
+        self.driver.delete_all_cookies()
 
     def navigate(self, url):
         self.driver.get(url)
